@@ -12,7 +12,7 @@ RUN apt-get install -y --force-yes mongodb-org  \
 	&& mkdir -p /data/db
 
 #install alerta-server
-RUN pip install alerta-server 	
+RUN pip install alerta-server alerta
 
 #install alerta-console-web
 RUN cd /opt \
@@ -24,4 +24,5 @@ COPY ./startup.sh /root/startup.sh
 RUN chmod +x /root/startup.sh
 
 expose 8000/tcp
+expose 8080/tcp
 CMD ["/root/startup.sh"]
