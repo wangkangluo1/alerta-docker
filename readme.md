@@ -1,6 +1,6 @@
 ###play with it
 ```bash
-docker run -i -t -p 8000:8000 -d alerta
+docker run -i -t -p 8000:8000 -p 8080:8080 -d alerta
 ```
 >add alert 
 
