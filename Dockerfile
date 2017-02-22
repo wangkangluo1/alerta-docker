@@ -9,7 +9,7 @@ RUN set -xe \
 
 #install mongodb	
 RUN apt-get install -y --force-yes mongodb-org  \
-	mkdir -p /data/db
+	&& mkdir -p /data/db
 
 #install alerta-server
 RUN pip install alerta-server 	
