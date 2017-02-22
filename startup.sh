@@ -6,7 +6,7 @@ echo "connect to mysql server:  ${MYSQL_SERVER}"
 nohup mongod > /var/log/mongo.log 2>&1 &
 
 #run alertad
-nohup alerta > /var/log/alerta.log 2>&1 &
+nohup alertad > /var/log/alerta.log 2>&1 &
 
 #run alerta-web-console
 cd /optp/alerta-angular-alerta-webui-*/app
